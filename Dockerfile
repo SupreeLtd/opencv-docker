@@ -1,5 +1,5 @@
 FROM ubuntu:18.04
-LABEL author="Sri Prasanna <aksrini1980@gmail.com>"
+LABEL author="Sri Prasanna <me@supree.co.uk>"
 LABEL version="0.10.0"
 LABEL opencvversion="3.4.6"
 LABEL pythonversion="3.6.9"
