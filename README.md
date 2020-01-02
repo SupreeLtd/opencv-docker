@@ -15,8 +15,9 @@ https://www.pyimagesearch.com/2018/05/28/ubuntu-18-04-how-to-install-opencv/
 
 
 ## Note
-1. Non-Free modules like SIFT and SURF are enabled. So, check on the license of the respective modules, if you need to use them for commercial uses.
+1. Non-Free modules like SIFT and SURF are enabled. So, check on the license of the respective modules, if you need to use them for commercial uses
 2. Other modules like `tesseract-ocr` have also been included for convenience
+3. I have also added a few fixes to the issues that I ran into while building these images
 
 
 More improvements to follow.
