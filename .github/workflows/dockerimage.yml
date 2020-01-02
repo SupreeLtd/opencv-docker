@@ -9,7 +9,7 @@ jobs:
     - name: Build and Publish to Docker Hub
       uses: azure/docker-login@v1
       with:
-        username: $GITHUB_ACTOR
+        username: aksrini1980
         password: ${{ secrets.GITHUB_DOCKERHUB_TOKEN }}
     - run: |
         docker build . --file Dockerfile --tag aksrini1980/opencv:${{ github.sha }}
