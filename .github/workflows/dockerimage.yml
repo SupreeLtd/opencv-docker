@@ -7,11 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Build and Publish to Docker Hub
-      uses: azure/docker-login@v1
+      uses: azure/container-actions/docker-login@master
       with:
         username: aksrini1980
         password: ${{ secrets.GITHUB_DOCKERHUB_TOKEN }}
     - run: |
-        docker build -t aksrini1980/opencv:${{ github.sha }} .
+        docker build . -t aksrini1980/opencv:${{ github.sha }}
         docker push aksrini1980/opencv:${{ github.sha }}
 
