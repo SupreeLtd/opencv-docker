@@ -14,7 +14,7 @@ RUN apt-get update -q -y && \
 RUN apt-get install -y software-properties-common
 RUN apt-get install -y tesseract-ocr
 
-RUN add-apt-repository "deb [arch=amd64,i386] http://security.ubuntu.com/ubuntu bionic-security main"
+RUN add-apt-repository "deb http://security.ubuntu.com/ubuntu xenial-security main"
 
 RUN apt-get install -y build-essential cmake unzip pkg-config \
         libjpeg-dev libpng-dev libtiff-dev \
