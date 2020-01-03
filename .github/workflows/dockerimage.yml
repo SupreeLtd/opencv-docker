@@ -16,7 +16,6 @@ jobs:
     - run: |
         pwd
         ls -ltr
-        docker build . -t aksrini1980/opencv:${{ github.sha }}
-        docker tag aksrini1980/opencv:${{ github.sha }} aksrini1980/opencv:0.10.0
-        docker push aksrini1980/opencv:${{ github.sha }} aksrini1980/opencv:0.10.0
-
+        docker build . -t aksrini1980/opencv:0.10.0
+        docker tag aksrini1980/opencv:0.10.0 aksrini1980/opencv:${{ github.sha }}
+        docker push aksrini1980/opencv:0.10.0
